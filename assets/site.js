@@ -19,10 +19,22 @@
     try { savedLanguage = localStorage.getItem('preferred-language'); } catch (_) {}
     if (savedLanguage === 'en') setLanguage('en');
     document.getElementById('year').textContent = new Date().getFullYear();
-  
+
 // Preserve links to the former homepage sections.
 if (location.pathname === '/') {
   const oldSections = {research:'/research/', publications:'/publications/', teaching:'/teaching/', resources:'/resources/', bio:'/bio/', cv:'/bio/'};
   const destination = oldSections[location.hash.slice(1)];
   if (destination) location.replace(destination);
 }
+
+// Open the target year or region when following an archive index link.
+function revealArchiveTarget() {
+  const id = decodeURIComponent(location.hash.slice(1));
+  const target = document.getElementById(id);
+  if (!target) return;
+  for (let node = target; node; node = node.parentElement) {
+    if (node.tagName === 'DETAILS') node.open = true;
+  }
+}
+window.addEventListener('hashchange', revealArchiveTarget);
+revealArchiveTarget();
