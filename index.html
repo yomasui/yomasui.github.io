@@ -207,6 +207,7 @@
     .arrow { color: var(--blue); font-size: 1.5rem; line-height: 1; transition: transform .2s ease; }
     .publication:hover .arrow, .resource-link:hover .arrow { transform: translate(4px, -2px); }
     .all-link { display: inline-flex; align-items: center; gap: 10px; margin-top: 28px; color: var(--blue); font-weight: 800; }
+    .publication-links { display: flex; flex-wrap: wrap; gap: 0 32px; }
 
     .split { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(50px, 9vw, 110px); }
     .split h2 { margin-bottom: 26px; }
@@ -387,9 +388,14 @@
             <span class="arrow" aria-hidden="true">↗</span>
           </a>
         </div>
-        <a class="all-link" href="https://www.masui.j.u-tokyo.ac.jp/english.html" target="_blank" rel="noopener noreferrer">
-          <span data-lang="ja">英語論文一覧を見る</span><span data-lang="en">View English-language publications</span><span aria-hidden="true">→</span>
-        </a>
+        <div class="publication-links">
+          <a class="all-link" href="https://ymastax.blogspot.com/" target="_blank" rel="noopener noreferrer">
+            <span>J-TaxNotes</span><span aria-hidden="true">→</span>
+          </a>
+          <a class="all-link" href="https://www.masui.j.u-tokyo.ac.jp/english.html" target="_blank" rel="noopener noreferrer">
+            <span data-lang="ja">英語論文一覧を見る</span><span data-lang="en">View English-language publications</span><span aria-hidden="true">→</span>
+          </a>
+        </div>
       </div>
     </section>
 
