@@ -316,3 +316,11 @@
   .archive-content[id], .archive-content [id], .publication-list[id] { scroll-margin-top: 220px; }
 }
 @media print { .archive-content details > * { display: block !important; } }
+
+/* Stage 3: ordinary links between static language editions. */
+.lang-switch a { display: inline-flex; align-items: center; justify-content: center; min-width: 42px; min-height: 36px; padding: 5px 8px; color: var(--ink-soft); font: 700 .76rem/1.4 var(--sans); text-decoration: none; }
+.lang-switch a[aria-current="page"] { color: #fff; background: var(--ink); }
+.lang-switch { flex-shrink: 0; }
+.hero h1 { overflow-wrap: normal; }
+html[lang="en"] .hero h1 { font-size: clamp(3.1rem, 7vw, 6rem); }
+.resource-title { grid-column: 1; }
