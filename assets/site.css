@@ -324,3 +324,23 @@
 .hero h1 { overflow-wrap: normal; }
 html[lang="en"] .hero h1 { font-size: clamp(3.1rem, 7vw, 6rem); }
 .resource-title { grid-column: 1; }
+
+/* Stage 4: current research and the role of J-TaxNotes. */
+#current-research { background: var(--wash); border-bottom: 1px solid var(--line); padding-block: 64px; scroll-margin-top: 210px; }
+#current-research .m-current-head { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 20px; margin-bottom: 20px; }
+#current-research .m-current-head a { color: var(--blue); font-size: .875rem; font-weight: 700; }
+#current-research .m-topics { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; }
+#current-research .m-topics h3, #current-research .m-detail h3 { font-size: 1.125rem; line-height: 1.5; margin: 0; }
+#current-research .m-detail { display: grid; grid-template-columns: 54px minmax(0,1fr); gap: 20px; padding: 28px 0; border-top: 1px solid var(--line); }
+#current-research .m-number { color: var(--red); font: 700 .8125rem/1.8 Georgia,serif; }
+#current-research .m-note { margin-top: 24px; padding: 28px; border-left: 3px solid var(--blue); background: #fff; }
+#current-research .m-note h3 { margin: 0 0 12px; }
+#current-research .m-kicker { color: var(--blue); font-size: .8125rem; font-weight: 700; letter-spacing: .1em; margin: 0 0 12px; }
+#current-research .m-note p:not(.m-kicker) { color: var(--ink-soft); }
+#current-research .m-note a { color: var(--blue); }
+.resource-description { grid-column: 1; margin: 12px 0 0; font-size: .875rem; color: var(--ink-soft); }
+@media(max-width:720px) {
+ #current-research { padding-block: 42px; }
+ #current-research .m-topics { grid-template-columns: 1fr; gap: 26px; }
+ #current-research .m-detail { grid-template-columns: 28px minmax(0,1fr); gap: 12px; }
+}
