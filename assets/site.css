@@ -204,8 +204,10 @@
     .split { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(50px, 9vw, 110px); }
     .split h2 { margin-bottom: 26px; }
     .split p { color: var(--ink-soft); }
-    .course-list { margin: 28px 0 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+    .course-heading { margin-top: 38px; font-size: clamp(1.25rem, 2.5vw, 1.65rem); }
+    .course-list { margin: 18px 0 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
     .course-list li { display: flex; justify-content: space-between; gap: 20px; padding: 15px 0; border-bottom: 1px solid var(--line); }
+    .course-list span:first-child { min-width: 0; }
     .course-list span:last-child { color: var(--ink-soft); font-size: .84rem; text-align: right; }
     .timeline { margin: 28px 0 0; padding: 0; list-style: none; }
     .timeline li { display: grid; grid-template-columns: 64px 1fr; gap: 18px; padding: 0 0 22px; }
@@ -282,6 +284,9 @@
   .nav-group { flex-wrap: wrap; }
   .main-nav { width: 100%; gap: 4px 16px; }
   .main-nav a { padding-block: 8px; }
+  .course-list li { display: block; }
+  .course-list span { display: block; }
+  .course-list span:last-child { margin-top: 6px; text-align: left; }
 }
 .reading-page h1 span, .section-head h1 span { margin: 0; font: inherit; letter-spacing: inherit; }
 
