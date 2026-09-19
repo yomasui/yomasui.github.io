@@ -315,6 +315,11 @@
 .archive-content .tag { display: inline-block; margin-left: 6px; color: var(--ink-soft); font-size: .875rem; }
 .archive-content[id], .archive-content [id], .publication-list[id] { scroll-margin-top: 190px; }
 .main-nav a[aria-current="location"] { color: var(--blue); text-decoration: underline; }
+.naomi-links .archive-detail > section { padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+.naomi-links .archive-detail > section:last-child { border-bottom: 0; }
+.naomi-links h3 { margin-top: 22px; color: var(--ink); }
+.reading-page .subheading { margin-top: 34px; font-size: clamp(1.25rem, 2.5vw, 1.65rem); }
+.archive-content blockquote { margin: 24px 0; padding: 12px 20px; border-left: 3px solid var(--blue); background: var(--wash); }
 @media (max-width: 620px) {
   .archive-detail, .region-body { padding-inline: 14px; }
   .bibliography { padding-left: 1.2rem; }
