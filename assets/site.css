@@ -354,3 +354,38 @@ html[lang="en"] .hero h1 { font-size: clamp(3.1rem, 7vw, 6rem); }
  #current-research .m-topics { grid-template-columns: 1fr; gap: 26px; }
  #current-research .m-detail { grid-template-columns: 28px minmax(0,1fr); gap: 12px; }
 }
+
+/* Tax treaty access page. */
+.treaty-page { max-width: 960px; }
+.treaty-page .treaty-toc,
+.treaty-page .treaty-section {
+  margin-top: 28px;
+  padding: 24px 28px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+.treaty-page .treaty-toc { background: var(--wash); }
+.treaty-page .treaty-toc p { margin-top: 0; }
+.treaty-page .treaty-toc ul { margin-bottom: 0; }
+.treaty-page .treaty-section h2 { margin-bottom: 14px; }
+.treaty-page .treaty-section > ul { margin-bottom: 0; }
+.treaty-page .treaty-badge {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 2px 9px;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  background: var(--wash);
+  font-size: .82rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+.treaty-page .treaty-links { display: flex; flex-wrap: wrap; gap: 2px 12px; align-items: baseline; }
+.treaty-page .treaty-links > div:first-child { flex-basis: 100%; }
+.treaty-page .treaty-note { margin-bottom: 0; font-size: .9rem; }
+@media (max-width: 620px) {
+  .treaty-page .treaty-toc,
+  .treaty-page .treaty-section { padding: 20px 18px; }
+  .treaty-page .treaty-links { display: block; }
+  .treaty-page .treaty-links a { display: inline; }
+}
