@@ -181,6 +181,7 @@
     .research-number { color: var(--red); font: 700 .75rem/1 Georgia, serif; letter-spacing: .08em; }
     h3 { margin: 54px 0 14px; font-family: var(--serif); font-size: 1.35rem; line-height: 1.45; }
     .research-card p { margin: 0; color: var(--ink-soft); font-size: .94rem; }
+    .research-card .research-note { font-size: .84rem; }
 
     .publication-list { border-top: 2px solid var(--ink); }
     .publication {
