@@ -70,11 +70,18 @@
       height: 34px;
       display: grid;
       place-items: center;
+      overflow: hidden;
       color: #fff;
       background: var(--ink);
       font-family: Georgia, serif;
       font-size: .95rem;
       letter-spacing: .06em;
+    }
+    .monogram img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
     .nav-group { display: flex; align-items: center; gap: 28px; }
     .main-nav { display: flex; gap: 24px; }
