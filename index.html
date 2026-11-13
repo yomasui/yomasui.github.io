@@ -4,13 +4,25 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="増井良啓（東京大学大学院法学政治学研究科教授）の研究・教育・著作に関するウェブサイト。専門は租税法・国際課税。" name="description"/>
+<meta content="増井良啓の研究・教育・著作に関するウェブサイト。専門は租税法・国際課税。" name="description"/>
 <meta content="#071b33" name="theme-color"/>
 <title>トップ | 増井良啓</title>
 <link href="https://yomasui.jp/" rel="canonical"/>
 <link href="/assets/site.css?v=stage4" rel="stylesheet"/>
 <script defer="" src="/assets/pages.js"></script>
-<link href="https://yomasui.jp/" hreflang="ja" rel="alternate"/><link href="https://yomasui.jp/en/" hreflang="en" rel="alternate"/><link href="https://yomasui.jp/" hreflang="x-default" rel="alternate"/></head>
+<link href="https://yomasui.jp/" hreflang="ja" rel="alternate"/><link href="https://yomasui.jp/en/" hreflang="en" rel="alternate"/><link href="https://yomasui.jp/" hreflang="x-default" rel="alternate"/>
+<style>
+.hero-grid { grid-template-columns: 1fr 1fr; }
+.hero-copy p + p { margin-top: 1em; }
+.pillar-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; margin: 28px 0; }
+.pillar-grid article { border-top: 1px solid #cad4df; padding-top: 18px; }
+.pillar-grid h3 { margin: 0 0 .5em; }
+.pillar-grid p { margin: 0; }
+@media (max-width: 820px) {
+  .hero-grid, .pillar-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
 <body>
 <a class="skip-link" href="#main">本文へ移動</a>
 <header class="site-header">
@@ -32,30 +44,66 @@
 </div>
 </div>
 </header>
-<main id="main"><section class="hero" id="top">
-<div class="wrap hero-grid">
-<div>
-<p class="eyebrow">
-<span>租税法・国際課税</span>
-</p>
-<h1>増井良啓</h1>
-</div>
-<div class="hero-copy">
-<p>租税法というフィールドを中心に、研究と教育を行っています。問いの中心にあるのは、「人はなぜ納税するか」です。</p>
-<p class="hero-role">東京大学大学院法学政治学研究科 教授</p>
-</div>
-</div>
-</section><section class="section m-new" id="current-research"><div class="wrap"><div class="m-current-head"><h2>現在の研究</h2><a href="https://yomasui.jp/research/">研究について詳しく見る →</a></div><div class="m-topics">
-<article><h3>1970年日韓租税条約の締結過程</h3></article>
-<article><h3>会社不正と租税法</h3></article>
-<article><h3>消費税不正（VAT fraud）の構造と法的対応</h3></article>
-</div></div></section>
-<section class="section"><div class="wrap"><div class="resources"><a class="resource-link" href="/research/"><span aria-hidden="true" class="arrow">→</span><span class="resource-title"><span>研究</span></span></a>
-<a class="resource-link" href="/publications/"><span aria-hidden="true" class="arrow">→</span><span class="resource-title"><span>著作・論文</span></span></a>
-<a class="resource-link" href="https://ymastax.blogspot.jp/"><span class="resource-label">J-TaxNotes</span><span aria-hidden="true" class="arrow">→</span><span class="resource-title"><span>研究ノート</span></span><p class="resource-description">租税法・国際課税・租税政策について、日々の考察、文献紹介、研究・教育の記録を綴っています。</p></a>
-<a class="resource-link" href="/teaching/"><span aria-hidden="true" class="arrow">→</span><span class="resource-title"><span>教育</span></span></a>
-<a class="resource-link" href="/resources/"><span aria-hidden="true" class="arrow">→</span><span class="resource-title"><span>資料</span></span></a>
-<a class="resource-link" href="/bio/"><span aria-hidden="true" class="arrow">→</span><span class="resource-title"><span>略歴</span></span></a></div></div></section></main>
+<main id="main">
+  <!-- 本文の編集はここから -->
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow"><span>租税法・国際課税</span></p>
+        <h1>増井良啓</h1>
+      </div>
+      <div class="hero-copy">
+        <p>租税法というフィールドを中心に、研究と教育を行っています。</p>
+        <p>租税制度は、国家や社会のあり方と深く結びついています。税のルールは、どのように形成され、企業や人々の行動にどのような影響を与え、いかにして実現されるのでしょうか。</p>
+        <p>これまで、租税制度の設計、国際課税と企業活動、納税行動と税務執行について研究してきました。これらの研究を貫く問いの一つが、「人はなぜ納税するか」です。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="research-pillars">
+    <div class="wrap">
+      <h2>研究の3つの柱</h2>
+      <div class="pillar-grid">
+        <article>
+          <h3>租税法と租税政策</h3>
+          <p>公共財の財源調達のあり方を、租税という素材を中心にして、法律家の視点から検討します。</p>
+        </article>
+        <article>
+          <h3>国際課税と企業</h3>
+          <p>多国籍企業、租税条約、租税競争など、グローバル化が税制にもたらす課題を扱います。</p>
+        </article>
+        <article>
+          <h3>納税行動と執行</h3>
+          <p>人々が税を納める理由と、納税行動を支える法制度・税務執行のあり方を探ります。</p>
+        </article>
+      </div>
+      <p>これらの3つの柱は相互に関連しています。租税法の制度設計を考えるには、企業や人々の行動を理解し、法が実際にどのように執行されるかを視野に入れる必要があります。</p>
+    </div>
+  </section>
+
+  <section class="section m-new" id="current-research">
+    <div class="wrap">
+      <div class="m-current-head">
+        <h2>現在の研究</h2>
+        <a href="https://yomasui.jp/research/">研究について詳しく見る →</a>
+      </div>
+      <div class="m-topics">
+        <article><h3>消費税不正</h3></article>
+        <article><h3>会社不正と租税法</h3></article>
+        <article><h3>執行可能な仕向地の法理論</h3></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <a class="resource-link" href="https://ymastax.blogspot.com/">
+        <span aria-hidden="true" class="arrow">→</span>
+        <span class="resource-title">J-TaxNotes ― 日々の研究ノート</span>
+      </a>
+    </div>
+  </section>
+</main>
 <footer>
 <div class="wrap footer-inner">
 <div>
